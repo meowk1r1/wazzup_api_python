@@ -36,6 +36,18 @@ class WazzupAPI:
             # "phone": phone # мы можем тут телеф сразу по апи передавать, но в моем случае это не нужно
         }]
         return self.create_user(user_data)
+    
+
+    def register_user(self, user_id, name, phone):
+        # Здесь можно вызвать метод create_user или выполнить другие действия
+        user_data = [{
+            "id": str(user_id),
+            "name": str(name)
+            # "phone": phone
+        }]
+        print(user_data)
+        return self.create_user(user_data)
+    
 
     def create_user(self, user_data): #создаем юзера, почему нет
         self.base_url = "https://api.wazzup24.com/v3"

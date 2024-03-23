@@ -1,3 +1,19 @@
+Metadata-Version: 2.1
+Name: wazzup-api-python
+Version: 0.1.0
+Summary: Python клиент для API Wazzup24.
+Home-page: https://github.com/meowk1r1/wazzup_api_python
+Author: meowk1r1
+Author-email: dorentroof@ya.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # wazzup_api_python
 ## Wazzup24.com api python
 Данный файлик возможно позже станет либой, я об этом еще не думал.
@@ -10,10 +26,7 @@
 
 
 # Установка / install
-
-```shell
-pip install wazzup_api_python
-```
+Просто скачай файл с гита и закинь его в папку своего проекта, дальше уже больше
 
 # Использование / use
 ```python
@@ -57,3 +70,5 @@ wz.send_message(text = "text", id="Chat_id", channel_id="channel_id", user_id="u
 Надеюсь оно тебе поможет! С любовью от meowk1r1
 
 I hope it helps you! With love from meowk1r1
+
+

@@ -1,6 +1,6 @@
 import requests
 import json
-import config
+
 
 
 class WazzupAPI:
@@ -25,17 +25,17 @@ class WazzupAPI:
                 return self.register_user(user_id, name, phone)
             else:
                 print(2)
-                return self.create_single_user(user_id, name, phone)
+                return self.register_user(user_id, name, phone)
         else:
             return response.json()
 
-    def create_single_user(self, user_id, name, phone): # опять же создание челика, просто формировка json массива
-        user_data = [{
-            "id": str(user_id),
-            "name": str(name)
-            # "phone": phone # мы можем тут телеф сразу по апи передавать, но в моем случае это не нужно
-        }]
-        return self.create_user(user_data)
+    # def create_single_user(self, user_id, name, phone): # опять же создание челика, просто формировка json массива
+    #     user_data = [{
+    #         "id": str(user_id),
+    #         "name": str(name)
+    #         # "phone": phone # мы можем тут телеф сразу по апи передавать, но в моем случае это не нужно
+    #     }]
+    #     return self.create_user(user_data)
     
 
     def register_user(self, user_id, name, phone):

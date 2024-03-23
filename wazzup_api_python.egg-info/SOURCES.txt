@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wazzup_api_python.egg-info/PKG-INFO
+wazzup_api_python.egg-info/SOURCES.txt
+wazzup_api_python.egg-info/dependency_links.txt
+wazzup_api_python.egg-info/requires.txt
+wazzup_api_python.egg-info/top_level.txt
